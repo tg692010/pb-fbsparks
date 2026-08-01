@@ -1,284 +1,610 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Sparks Center — Student Advocacy for Fort Bend ISD</title>
-<link rel="stylesheet" href="styles.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SPARKS STEM CENTER CAMPAIGN</title>
+  <meta name="description" content="A student civic advocacy campaign led by PowerBreakers FTC Team #22045 (www.powerbreakers22045.com) demanding a dedicated 15,000 sq ft STEM Center for all Fort Bend ISD high schools.">
+  <!-- Google Fonts: Outfit (Display) & Inter (Body) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Outfit:wght@600;700;800;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
 
-<header class="topbar">
-  <div class="wrap">
-    <span class="credit">Organized by Power Breakers, FIRST Tech Challenge Team 22045 — Sugar Land, TX</span>
-    <a class="btn btn-outline" style="padding:8px 16px;font-size:12px;" href="#petition">Sign the petition</a>
-  </div>
-</header>
-
-<nav class="mainnav">
-  <div class="wrap">
-    <div class="brand">SPARKS <span>CENTER</span></div>
-    <div class="navlinks">
-      <a href="#facility">Facility</a>
-      <a href="#why">Why it matters</a>
-      <a href="#action">Take action</a>
-      <a href="#dates">Key dates</a>
-      <a href="#gallery">Campaign trail</a>
+  <!-- TOP TEAM 22045 ANNOUNCEMENT BAR -->
+  <div class="top-announcement-bar">
+    <div class="container announcement-content">
+      <span class="pulse-badge">🤖 POWERBREAKERS FTC #22045 OUTREACH</span>
+      <span class="announcement-text">
+        Student Advocacy led by <strong>PowerBreakers FTC Team 22045</strong> (<a href="https://www.powerbreakers22045.com" target="_blank" class="team-link">www.powerbreakers22045.com</a>) — <strong>3,842 of 5,000 Signatures Collected!</strong>
+      </span>
+      <a href="#petition-section" class="btn-sm btn-flame">[ Sign Petition ]</a>
     </div>
   </div>
-</nav>
 
-<section class="hero">
-  <div class="wrap hero-grid">
-    <div>
-      <div class="eyebrow">First tech challenge // team 22045 // Sugar Land, TX</div>
-      <h1>A robotics campus<span class="line2">for all of FBISD.</span></h1>
-      <p class="lead">Not one of Fort Bend ISD's 11 high schools has a dedicated robotics lab. We're asking the district to build the Sparks Center — a shared home for every team to build, machine, and practice.</p>
-      <div class="hero-ctas">
-        <a href="#petition" class="btn btn-accent">Sign the petition &rarr;</a>
-        <a href="#video" class="btn btn-outline">Watch the film</a>
-      </div>
+  <!-- NAVBAR -->
+  <header class="navbar">
+    <div class="container nav-container">
+      <a href="#" class="brand-logo">
+        <span class="logo-badge">SPARKS</span>
+        <span class="logo-text">FBISD <strong>STEM CENTER</strong></span>
+      </a>
+
+      <!-- POWERBREAKERS TEAM CREDENTIAL BADGE -->
+      <a href="https://www.powerbreakers22045.com" target="_blank" class="team-header-badge">
+        <span>Organized by</span>
+        <strong>PowerBreakers #22045 ↗</strong>
+      </a>
+
+      <nav class="nav-links">
+        <a href="#renderings-section">Proposed Facility</a>
+        <a href="#why-section">Why FBISD Needs This</a>
+        <a href="#action-hub">Take Action</a>
+        <a href="#roadmap">Campaign Roadmap</a>
+        <a href="#testimonials">Voices</a>
+        <a href="#board-mobilization" class="btn-nav-accent">[ Speak at Board Meeting ]</a>
+      </nav>
+      <button class="mobile-menu-btn" id="mobile-menu-btn" aria-label="Toggle Navigation">☰</button>
     </div>
-    <div class="mockcard">
-      <div class="bar"><span class="dot"></span><span class="dot"></span><span class="dot"></span><span class="url">sparkscenter.org/status</span></div>
-      <div class="body">
-        <div class="row"><span class="lab">FBISD high schools</span><span class="val">11</span></div>
-        <div class="row"><span class="lab">Campuses with a robotics lab</span><span class="val accent">0</span></div>
-        <div class="row"><span class="lab">Regional facility already built</span><span class="val">Katy ISD</span></div>
-      </div>
-      <div class="callout">"Eleven high schools, zero labs — Sugar Land already invests in championship programs. It's time to invest in this one."</div>
-    </div>
-  </div>
-</section>
+  </header>
 
-<div class="stats">
-  <div><div class="num">11</div><div class="lbl">FBISD high schools</div></div>
-  <div><div class="num">0</div><div class="lbl">Campuses with a robotics lab</div></div>
-  <div><div class="num">1</div><div class="lbl">Comparable facility already built regionally</div></div>
-</div>
+  <!-- 1. ARCHITECTURAL HERO SECTION -->
+  <section class="hero-section">
+    <div class="container hero-grid">
 
-<section id="video">
-  <div class="wrap">
-    <div class="eyebrow">See it for yourself</div>
-    <h2 class="h2">Watch what students are building with</h2>
-    <p class="sub">Real footage of teams building in cafeterias, hallways, and storage closets across FBISD.</p>
-    <a href="#" style="display:block;max-width:680px;">
-      <div style="aspect-ratio:16/9;background:var(--bg-alt);border:1px solid var(--line);border-radius:10px;display:flex;align-items:center;justify-content:center;position:relative;">
-        <div style="width:66px;height:66px;border-radius:50%;background:var(--accent);display:flex;align-items:center;justify-content:center;">
-          <svg width="22" height="22" viewBox="0 0 24 24" fill="#1a1200"><path d="M8 5v14l11-7z"/></svg>
+      <!-- HERO LEFT: CIVIC VISION & POWERBREAKERS MESSAGING -->
+      <div class="hero-text-content">
+        <div class="hero-kicker-badge">
+          ⚡ CIVIC OUTREACH BY POWERBREAKERS FTC TEAM #22045
         </div>
-        <span style="position:absolute;bottom:16px;left:18px;font-size:12.5px;color:var(--text-sec);">Sparks Center — campaign film (3:40)</span>
-      </div>
-    </a>
-  </div>
-</section>
+        <h1 class="hero-title">
+          A World-Class STEM Center for <span class="highlight-wood">Fort Bend ISD.</span><br>
+          Built for Future <span class="highlight-navy">Engineers & Champions.</span>
+        </h1>
+        <p class="hero-subtitle">
+          Spearheaded by <strong>PowerBreakers FTC Team #22045</strong> (<a href="https://www.powerbreakers22045.com" target="_blank" class="text-link">www.powerbreakers22045.com</a>), this student advocacy movement represents all 11 Fort Bend ISD High Schools. <strong>Not a single campus has a dedicated robotics lab.</strong> Help us build the proposed <strong>FBISD SPARKS STEM Center</strong> featuring a competition arena, glass workshop bays, and precision machining labs.
+        </p>
 
-<section id="team" style="border-top:1px solid var(--line);">
-  <div class="wrap about-grid">
-    <div>
-      <div class="eyebrow">Meet the organizers</div>
-      <h2 class="h2">Student engineers, launching a district-wide campaign.</h2>
-      <p>Power Breakers, FIRST Tech Challenge Team 22045, has spent seasons building competition robots between lunch shifts in a cafeteria. This campaign grew out of that experience — and out of conversations with robotics teams at every other FBISD high school who build the same way.</p>
-      <p>The ask isn't for one team. It's for a shared facility that gives all 11 FBISD high schools the same real access to tools, space, and mentorship that a handful of well-resourced campuses already informally have.</p>
-      <p class="pullquote">"We built award-winning robots out of a cafeteria closet. We're launching this campaign so the next generation of FBISD engineers doesn't have to."</p>
+        <div class="hero-cta-group">
+          <a href="#petition-section" class="btn-hero-primary">[ Sign the Petition Now ]</a>
+          <a href="https://www.powerbreakers22045.com" target="_blank" class="btn-hero-secondary">[ Visit PowerBreakers 22045 Site ↗ ]</a>
+        </div>
+
+        <div class="hero-trust-indicators">
+          <div class="avatar-stack">
+            <span class="avatar">🤖</span>
+            <span class="avatar">👨‍💻</span>
+            <span class="avatar">👩‍🔬</span>
+            <span class="avatar">👨‍🏫</span>
+          </div>
+          <span class="trust-text">Organized by <strong>PowerBreakers FTC Team 22045 & 3,840+ FBISD Supporters</strong></span>
+        </div>
+      </div>
+
+      <!-- HERO RIGHT: STICKY PETITION CARD OVER EXTERIOR RENDER -->
+      <div class="hero-petition-card-wrapper" id="petition-section">
+        <div class="hero-render-preview">
+          <img src="assets/exterior.jpg" alt="FBISD SPARKS STEM Center Exterior Rendering" class="hero-preview-img">
+          <div class="render-overlay-badge">Architectural Rendering: FBISD SPARKS STEM CENTER</div>
+        </div>
+
+        <div class="patronus-card sticky-card">
+          <div class="card-badge">🎯 PRIMARY CIVIC ACTION</div>
+          <h2 class="card-title">Demand Facility Funding for FBISD STEM</h2>
+          <p class="target-text">Official Target: <strong>FBISD Board of Trustees & Superintendent</strong></p>
+
+          <!-- PROGRESS BAR -->
+          <div class="petition-progress">
+            <div class="progress-labels">
+              <span class="current-count"><strong id="hero-sig-count">3,842</strong> signed</span>
+              <span class="target-count">Goal: <strong>5,000</strong></span>
+            </div>
+            <div class="progress-bar-track">
+              <div class="progress-bar-fill" id="hero-progress-fill" style="width: 76.8%;"></div>
+            </div>
+            <div class="recent-activity-pulse">
+              <span class="dot-green"></span> <em>Sarah M. from Sugar Land signed 3 mins ago</em>
+            </div>
+          </div>
+
+          <!-- SIGNATURE FORM -->
+          <form class="patronus-form" id="hero-petition-form">
+            <div class="form-group">
+              <input type="text" id="signer-name" placeholder="First & Last Name *" required>
+            </div>
+            <div class="form-group">
+              <input type="email" id="signer-email" placeholder="Email Address *" required>
+            </div>
+            <div class="form-group">
+              <select id="signer-role" required>
+                <option value="" disabled selected>I am a... *</option>
+                <option value="FBISD Parent">FBISD Parent</option>
+                <option value="FBISD Student">FBISD Student</option>
+                <option value="FBISD Educator">FBISD Educator / Coach</option>
+                <option value="Community Member">Fort Bend Community Member</option>
+                <option value="Engineer / Sponsor">Local Engineer / Business Leader</option>
+              </select>
+            </div>
+            <button type="submit" class="btn-patronus-submit">[ Sign the Petition ]</button>
+          </form>
+
+          <div class="secondary-coalition-box">
+            <p>Want instant SMS alerts before FBISD Board Meetings?</p>
+            <button type="button" class="btn-patronus-outline" id="open-sms-modal">[ Join Student Coalition (SMS Alerts) ]</button>
+          </div>
+        </div>
+      </div>
+
     </div>
-    <ul class="highlights">
-      <li><b>Hands-on engineering experience</b><span>Season after season of building, machining, and competing with almost no dedicated space.</span></li>
-      <li><b>District-wide coalition</b><span>Built alongside robotics teams and CTE staff across all 11 FBISD high schools.</span></li>
-      <li><b>Sugar Land roots</b><span>A campaign grounded in the community that already invests in championship programs.</span></li>
-    </ul>
-  </div>
-</section>
+  </section>
 
-<section id="facility" style="border-top:1px solid var(--line);">
-  <div class="wrap">
-    <div class="eyebrow">The proposal</div>
-    <h2 class="h2">Inside the proposed Sparks Center</h2>
-    <p class="sub">Student concept renderings, not official district designs — sized to what a comparable regional facility has actually built.</p>
-    <div class="renders">
-      <div class="render">
-        <div class="img">Entrance &amp; commons concept</div>
-        <div class="cap"><b>Shared entrance &amp; commons</b><span class="flag">Student concept rendering</span></div>
+  <!-- 2. ARCHITECTURAL SHOWCASE & RENDERING GALLERY -->
+  <section class="section-padding showcase-section" id="renderings-section">
+    <div class="container">
+      <div class="section-header text-center">
+        <span class="section-kicker">PROPOSED FACILITY RENDERS</span>
+        <h2 class="section-title">Inside the FBISD SPARKS STEM Center</h2>
+        <p class="section-subtitle">Explore the architect-rendered spaces designed to serve all 11 Fort Bend ISD high schools and feeder middle schools.</p>
       </div>
-      <div class="render">
-        <div class="img">Glass-front workshop bays</div>
-        <div class="cap"><b>Team workshop bays</b><span class="flag">Student concept rendering</span></div>
+
+      <!-- INTERACTIVE RENDER TABS -->
+      <div class="render-tabs-nav">
+        <button class="tab-btn active" data-tab="exterior">🏛️ Exterior Plaza & Solar Terrace</button>
+        <button class="tab-btn" data-tab="workshops">🔬 Glass Team Bays & Practice Arena</button>
+        <button class="tab-btn" data-tab="arena">🏆 FTC Competition Arena & Bleachers</button>
       </div>
-      <div class="render">
-        <div class="img">Garage-style build bay</div>
-        <div class="cap"><b>Garage-style team bays</b><span class="flag">Student concept rendering</span></div>
+
+      <!-- GALLERY PANELS -->
+      <div class="render-display-container">
+
+        <!-- PANEL 1: EXTERIOR -->
+        <div class="render-panel active" id="tab-exterior">
+          <div class="render-media-wrapper">
+            <img src="assets/exterior.jpg" alt="FBISD SPARKS STEM Center Exterior Rendering" class="render-main-img">
+          </div>
+          <div class="render-details-card">
+            <div class="render-tag">FACILITY HIGHLIGHT</div>
+            <h3>Modern Architectural Landmark with Sustainable Design</h3>
+            <p>Featuring a signature curved timber accent facade, high-efficiency solar roof panel array, wide glass entrance plaza, and an outdoor testing courtyard for mobile robotics and drone testing.</p>
+            <ul class="spec-list">
+              <li><strong>Facility Size:</strong> 15,000+ Square Feet</li>
+              <li><strong>Sustainability:</strong> Solar Roof & Eco Courtyard</li>
+              <li><strong>Accessibility:</strong> Centralized Location for All 11 High Schools</li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- PANEL 2: WORKSHOPS -->
+        <div class="render-panel" id="tab-workshops">
+          <div class="render-media-wrapper">
+            <img src="assets/workshops.jpg" alt="Multi-level Glass Workshop Bays" class="render-main-img">
+          </div>
+          <div class="render-details-card">
+            <div class="render-tag">WORKSHOP HIGHLIGHT</div>
+            <h3>Multi-Level Glass Team Bays & Practice Field</h3>
+            <p>Individual glass-walled team bays (*PowerBreakers 22045*, *Titan Robotics*, *Cyber Sharks*, *Code Warriors*) surrounding a full regulation FTC practice field, complete with upper-level spectator balconies and precision tool suites.</p>
+            <ul class="spec-list">
+              <li><strong>Team Bays:</strong> 8 Dedicated Glass Suites with Secure Storage</li>
+              <li><strong>Machinery:</strong> CNC Routers, 3D Printers, Laser Cutters</li>
+              <li><strong>Practice Floor:</strong> Year-Round Regulation Competition Field</li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- PANEL 3: ARENA -->
+        <div class="render-panel" id="tab-arena">
+          <div class="render-media-wrapper">
+            <img src="assets/arena.jpg" alt="FTC Robotics Competition Arena with Spectator Bleachers" class="render-main-img">
+          </div>
+          <div class="render-details-card">
+            <div class="render-tag">ARENA HIGHLIGHT</div>
+            <h3>Varsity-Level FTC Robotics Competition Arena</h3>
+            <p>A full stadium environment featuring double hanging Jumbotron scoreboards ("FBISD SPARKS EVENT"), dual match fields, spectator bleachers for 500+ attendees, and livestream broadcast integration.</p>
+            <ul class="spec-list">
+              <li><strong>Capacity:</strong> 500+ Spectator Stadium Seating</li>
+              <li><strong>AV System:</strong> Dual Suspended Jumbotron Scoreboards</li>
+              <li><strong>Impact:</strong> Hosting Regional & District Tournaments</li>
+            </ul>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- 3. STAT COUNTER BAR & COMPARISON GRID -->
+  <section class="section-padding impact-section" id="why-section">
+    <div class="container">
+
+      <!-- STAT COUNTER BAR -->
+      <div class="stat-counter-bar">
+        <div class="stat-card">
+          <div class="stat-number" data-target="3842">0</div>
+          <div class="stat-label">Verified Signatures</div>
+          <div class="stat-sub">76% of 5,000 Target Goal</div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-number" data-target="8500">+</div>
+          <div class="stat-label">Students Impacted</div>
+          <div class="stat-sub">Across 11 FBISD High Schools</div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-number" data-target="11">0</div>
+          <div class="stat-label">Schools Lacking Labs</div>
+          <div class="stat-sub">100% of FBISD Campuses</div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-number" data-target="42">+</div>
+          <div class="stat-label">State & World Awards</div>
+          <div class="stat-sub">Won in Cafeteria Closets</div>
+        </div>
+      </div>
+
+      <!-- THE PROBLEM VS THE VISION -->
+      <div class="section-header text-center margin-top-lg">
+        <span class="section-kicker">THE PROBLEM VS. THE SPARKS VISION</span>
+        <h2 class="section-title">Why FBISD Needs a Central Facility Now</h2>
+        <p class="section-subtitle">While neighboring Texas school districts invest in multi-million dollar innovation centers, FBISD teams disassemble heavy equipment daily for cafeteria lunch.</p>
+      </div>
+
+      <div class="comparison-grid">
+        <!-- CARD 1: THE PROBLEM -->
+        <div class="comparison-card card-problem">
+          <div class="card-status-pill pill-red">❌ THE CURRENT REALITY</div>
+          <h3>Cramped Hallways & Equity Gaps</h3>
+          <ul class="comparison-list">
+            <li>
+              <span class="icon-bad">✕</span>
+              <div>
+                <strong>Building in Cafeterias & Storage Closets</strong>
+                <p>Teams lose 45 minutes every afternoon setting up and tearing down makeshift workspaces before and after school.</p>
+              </div>
+            </li>
+            <li>
+              <span class="icon-bad">✕</span>
+              <div>
+                <strong>Zero Access to Heavy Precision Machinery</strong>
+                <p>No CNC routers, metal lathes, or waterjet cutters on any FBISD campus, forcing teams to rely on expensive private vendors.</p>
+              </div>
+            </li>
+            <li>
+              <span class="icon-bad">✕</span>
+              <div>
+                <strong>Improvised Practice Fields</strong>
+                <p>Robots are calibrated on uneven hallway carpets, leading to field alignment errors during official competitions.</p>
+              </div>
+            </li>
+            <li>
+              <span class="icon-bad">✕</span>
+              <div>
+                <strong>District Socio-Economic Equity Disparities</strong>
+                <p>Underfunded campuses without wealthy booster clubs cannot afford off-site rental space, leaving talented students behind.</p>
+              </div>
+            </li>
+          </ul>
+        </div>
+
+        <!-- CARD 2: THE VISION -->
+        <div class="comparison-card card-vision">
+          <div class="card-status-pill pill-green">✅ PROPOSED FBISD SPARKS CENTER</div>
+          <h3>State-of-the-Art Central Hub</h3>
+          <ul class="comparison-list">
+            <li>
+              <span class="icon-good">✓</span>
+              <div>
+                <strong>15,000 Sq Ft Centralized Innovation Complex</strong>
+                <p>A dedicated facility housing modular team bays, secure tool storage, fiber internet, and collaborative design zones.</p>
+              </div>
+            </li>
+            <li>
+              <span class="icon-good">✓</span>
+              <div>
+                <strong>Industrial Precision Machining Lab</strong>
+                <p>Equipped with CNC mills, laser cutters, 3D printing suites, and welding stations supervised by certified technical staff.</p>
+              </div>
+            </li>
+            <li>
+              <span class="icon-good">✓</span>
+              <div>
+                <strong>500-Seat Competition Arena & Bleachers</strong>
+                <p>Year-round access to regulation practice fields plus a spectator stadium with double Jumbotron scoreboards.</p>
+              </div>
+            </li>
+            <li>
+              <span class="icon-good">✓</span>
+              <div>
+                <strong>District-Wide STEM Equity for All 11 High Schools</strong>
+                <p>Equal access for every high school, middle school feeder program, and CTE student across Fort Bend ISD.</p>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- 4. MULTI-CHANNEL ACTION HUB -->
+  <section class="section-padding action-hub-section" id="action-hub">
+    <div class="container">
+      <div class="section-header text-center">
+        <span class="section-kicker">TAKE ACTION TODAY</span>
+        <h2 class="section-title">3 Ways You Can Mobilize the District</h2>
+        <p class="section-subtitle">Every signature, public comment, and corporate endorsement brings us closer to the Board vote.</p>
+      </div>
+
+      <div class="action-grid">
+
+        <!-- MODULE A: VIRAL SOCIAL SHARE -->
+        <div class="action-card">
+          <div class="action-card-icon">⚡</div>
+          <h3>1. Sign & Share the Petition</h3>
+          <p>Multiply your impact. Share this petition directly with 5 FBISD parents, teachers, or neighbors on social media.</p>
+
+          <div class="social-share-buttons">
+            <a href="https://api.whatsapp.com/send?text=Please%20sign%20this%20student-led%20petition%20demanding%20a%20dedicated%20FBISD%20SPARKS%20STEM%20Center!%20Led%20by%20PowerBreakers%20FTC%2022045:" target="_blank" class="share-btn btn-wa">
+              <span>💬</span> [ Share on WhatsApp ]
+            </a>
+            <button class="share-btn btn-ig" id="copy-ig-btn">
+              <span>📸</span> [ Share on Instagram ]
+            </button>
+            <a href="https://twitter.com/intent/tweet?text=PowerBreakers%20FTC%20Team%2022045%20is%20leading%20a%20campaign%20for%20a%20dedicated%20FBISD%20STEM%20Center!%20Sign%20the%20petition:%20%23BuildFBISDSTEM" target="_blank" class="share-btn btn-x">
+              <span>𝕏</span> [ Share on X / Twitter ]
+            </a>
+            <button class="share-btn btn-copy" id="copy-link-btn">
+              <span>🔗</span> [ Copy Direct Link ]
+            </button>
+          </div>
+        </div>
+
+        <!-- MODULE B: BOARD MOBILIZATION CARD -->
+        <div class="action-card highlight-card" id="board-mobilization">
+          <div class="action-card-icon">📢</div>
+          <span class="urgent-tag">CRITICAL ACTION</span>
+          <h3>2. Speak at the FBISD Board Meeting</h3>
+          <p>Take 3 minutes to share your story at the podium during Public Comment.</p>
+
+          <div class="deadline-warning-box">
+            ⚠️ <strong>DEADLINE:</strong> Public comment sign-up closes at <strong>12:00 PM (Noon)</strong> on Board Meeting day!
+          </div>
+
+          <ol class="action-steps">
+            <li><strong>Step 1:</strong> Register online on the FBISD Board Portal before 12:00 PM.</li>
+            <li><strong>Step 2:</strong> Download our 1-page talking points cheat sheet.</li>
+            <li><strong>Step 3:</strong> Wear FBISD Blue & stand with students at 6:00 PM.</li>
+          </ol>
+
+          <div class="card-btn-stack">
+            <a href="https://www.fortbendisd.com/domain/56" target="_blank" class="btn-patronus-submit">[ Register on FBISD Board Portal ]</a>
+            <button type="button" class="btn-patronus-outline" id="download-talking-points">[ Download 3-Min Talking Points (PDF) ]</button>
+          </div>
+        </div>
+
+        <!-- MODULE C: CORPORATE ENDORSEMENT FORM -->
+        <div class="action-card">
+          <div class="action-card-icon">🤝</div>
+          <h3>3. Corporate & Engineer Endorsement</h3>
+          <p>Are you an engineer, business owner, or tech executive? Submit an official endorsement letter for our Board proposal packet.</p>
+
+          <form class="patronus-form" id="corporate-endorse-form">
+            <div class="form-group">
+              <input type="text" placeholder="Full Name & Title *" required>
+            </div>
+            <div class="form-group">
+              <input type="text" placeholder="Company / Organization *" required>
+            </div>
+            <div class="form-group">
+              <select required>
+                <option value="" disabled selected>Support Type *</option>
+                <option value="Official Letter of Support">Official Letter of Support</option>
+                <option value="Equipment / Financial Pledge">Equipment / Financial Sponsorship Pledge</option>
+                <option value="Technical Mentorship">Student Mentorship Pledge</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <textarea rows="3" placeholder="Statement of Support (Optional)..."></textarea>
+            </div>
+            <button type="submit" class="btn-patronus-submit">[ Submit Official Endorsement ]</button>
+          </form>
+        </div>
+
       </div>
     </div>
-    <p style="font-size:13.5px;color:var(--text-sec);margin-top:20px;max-width:700px;">
-      Modeled on Katy ISD's Robert R. Shaw Center for STEAM — modular workshop bays, a shared precision-machining lab, and practice space, in the same format as its eight existing robotics bays. No stadium, no bleachers — just year-round space to build. We're also open to repurposing an underused or closing FBISD elementary campus as the site, rather than requiring new construction.
-    </p>
-  </div>
-</section>
+  </section>
 
-<section id="why" style="border-top:1px solid var(--line);">
-  <div class="wrap">
-    <div class="eyebrow">Why it matters</div>
-    <h2 class="h2">The problem versus the Sparks vision</h2>
-    <p class="sub">While neighboring Texas districts have invested in dedicated robotics facilities, FBISD teams disassemble equipment daily to make room for lunch.</p>
-    <div class="cols2">
-      <div class="card reality">
-        <h3>Current reality</h3>
+  <!-- 5. INTERACTIVE CAMPAIGN ROADMAP TIMELINE -->
+  <section class="section-padding roadmap-section" id="roadmap">
+    <div class="container">
+      <div class="section-header text-center">
+        <span class="section-kicker">STRATEGIC PATHWAY</span>
+        <h2 class="section-title">Campaign Roadmap to the 2027 Bond</h2>
+        <p class="section-subtitle">We have a clear, multi-phase plan to bring the STEM Center from student vision to board approval.</p>
+      </div>
+
+      <div class="timeline-container">
+
+        <!-- PHASE 1 -->
+        <div class="timeline-card active-phase">
+          <div class="phase-header">
+            <span class="phase-number">PHASE 1</span>
+            <span class="status-badge status-active">🟢 ACTIVE NOW</span>
+          </div>
+          <h3>Grassroots Mobilization & Petition Drive</h3>
+          <span class="timeline-date">May 2026 – August 2026</span>
+          <p>PowerBreakers FTC 22045 leading outreach across all 11 FBISD high schools to collect 5,000 signatures.</p>
+          <div class="phase-progress-mini">
+            <span>Progress: <strong>76% Complete</strong></span>
+            <div class="mini-bar"><div class="mini-fill" style="width: 76%;"></div></div>
+          </div>
+        </div>
+
+        <!-- PHASE 2 -->
+        <div class="timeline-card">
+          <div class="phase-header">
+            <span class="phase-number">PHASE 2</span>
+            <span class="status-badge status-upcoming">🟡 UPCOMING</span>
+          </div>
+          <h3>CTE & Administration Feasibility Meetings</h3>
+          <span class="timeline-date">September 2026</span>
+          <p>Present the formal 25-page STEM Center architectural & cost-efficiency proposal to FBISD CTE leadership.</p>
+        </div>
+
+        <!-- PHASE 3 -->
+        <div class="timeline-card">
+          <div class="phase-header">
+            <span class="phase-number">PHASE 3</span>
+            <span class="status-badge status-scheduled">🔵 FALL 2026</span>
+          </div>
+          <h3>Board Meeting Mobilization & Petition Delivery</h3>
+          <span class="timeline-date">October – November 2026</span>
+          <p>Mobilize 100+ students and parents to pack the FBISD Board Room and hand-deliver 5,000 verified signatures.</p>
+        </div>
+
+        <!-- PHASE 4 -->
+        <div class="timeline-card goal-phase">
+          <div class="phase-header">
+            <span class="phase-number">PHASE 4</span>
+            <span class="status-badge status-goal">🎯 TARGET GOAL</span>
+          </div>
+          <h3>FBISD Capital Improvement Bond Inclusion</h3>
+          <span class="timeline-date">2027 District Bond</span>
+          <p>Formal inclusion of the FBISD SPARKS STEM Center into the Facilities Master Plan and Bond Election vote.</p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- 6. TESTIMONIALS & VOICES -->
+  <section class="section-padding testimonials-section" id="testimonials">
+    <div class="container">
+      <div class="section-header text-center">
+        <span class="section-kicker">VOICES OF THE MOVEMENT</span>
+        <h2 class="section-title">Students, Teachers & Engineers Speak Out</h2>
+        <p class="section-subtitle">Hear why a centralized robotics facility is critical for Fort Bend ISD's future.</p>
+      </div>
+
+      <div class="testimonial-grid">
+
+        <div class="testimonial-card">
+          <div class="quote-mark">“</div>
+          <p class="quote-body">As members of PowerBreakers FTC Team #22045, we know firsthand how hard it is to build award-winning robots out of cafeteria closets. We launched this campaign so future generations have a real home to innovate.</p>
+          <div class="author-info">
+            <div class="author-avatar">🤖</div>
+            <div>
+              <strong>PowerBreakers FTC Team #22045</strong>
+              <span>Student Advocacy Leadership (<a href="https://www.powerbreakers22045.com" target="_blank">powerbreakers22045.com</a>)</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="testimonial-card">
+          <div class="quote-mark">“</div>
+          <p class="quote-body">The FTC competition arena rendering with bleachers shows how this center will turn STEM into a varsity sport for Fort Bend ISD. Imagine the energy!</p>
+          <div class="author-info">
+            <div class="author-avatar">👨‍🏫</div>
+            <div>
+              <strong>Marcus T.</strong>
+              <span>CTE Educator & FIRST Robotics Coach</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="testimonial-card">
+          <div class="quote-mark">“</div>
+          <p class="quote-body">As an engineering director in Houston, I look for candidates with practical hands-on experience. The FBISD SPARKS STEM Center will prepare thousands for top technical careers.</p>
+          <div class="author-info">
+            <div class="author-avatar">👩‍🔬</div>
+            <div>
+              <strong>Dr. Elena R.</strong>
+              <span>Aerospace Systems Engineer & FBISD Parent</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- 7. FOOTER & LEGAL ADVOCACY DISCLAIMER -->
+  <footer class="site-footer">
+
+    <!-- SMS QUICK ACTION BAR -->
+    <div class="sms-bar-container">
+      <div class="container sms-bar">
+        <div class="sms-text">
+          <strong>📲 Never Miss a Board Meeting Mobilization Alert!</strong>
+          <span>Text <strong>STEM</strong> to <strong>(833) 420-STEM</strong> or enter your cell number:</span>
+        </div>
+        <form class="sms-form" id="sms-quick-form">
+          <input type="tel" placeholder="(832) 000-0000" required>
+          <button type="submit" class="btn-sms">[ Subscribe ]</button>
+        </form>
+      </div>
+    </div>
+
+    <div class="container footer-content">
+      <div class="footer-col brand-col">
+        <div class="brand-logo">
+          <span class="logo-badge">SPARKS</span>
+          <span class="logo-text">FBISD <strong>STEM CENTER</strong></span>
+        </div>
+        <p>A student civic advocacy coalition spearheaded by <strong>PowerBreakers FTC Team #22045</strong> (<a href="https://www.powerbreakers22045.com" target="_blank" style="color: var(--color-wood-light);">www.powerbreakers22045.com</a>) demanding equitable STEM infrastructure for all Fort Bend ISD students.</p>
+      </div>
+
+      <div class="footer-col">
+        <h4>Navigation</h4>
         <ul>
-          <li>Teams lose roughly 45 minutes a day setting up and tearing down makeshift workspaces in cafeterias and hallways.</li>
-          <li>No FBISD campus has access to CNC routers, metal lathes, or waterjet cutters.</li>
-          <li>Robots are calibrated on uneven hallway carpet, causing field-alignment issues at competition.</li>
-          <li>Campuses without well-resourced booster clubs can't afford off-site rental space.</li>
+          <li><a href="#renderings-section">Proposed Facility</a></li>
+          <li><a href="#why-section">Why FBISD Needs This</a></li>
+          <li><a href="#action-hub">Action Hub</a></li>
+          <li><a href="#roadmap">Campaign Roadmap</a></li>
+          <li><a href="https://www.powerbreakers22045.com" target="_blank">PowerBreakers 22045 Website ↗</a></li>
         </ul>
       </div>
-      <div class="card vision">
-        <h3>Proposed Sparks Center</h3>
-        <ul>
-          <li>A shared facility with modular team bays, secure tool storage, and fiber internet.</li>
-          <li>A precision-machining lab with CNC mills, laser cutters, and 3D printing, supervised by certified staff.</li>
-          <li>Regulation practice space available year-round to every team.</li>
-          <li>Equal access for all 11 high schools and their feeder middle schools.</li>
-        </ul>
+
+      <div class="footer-col">
+        <h4>Connect</h4>
+        <div class="social-links">
+          <a href="https://www.powerbreakers22045.com" target="_blank" class="social-icon">🌐 www.powerbreakers22045.com</a>
+          <a href="#" class="social-icon">Instagram: @BuildFBISDSTEM</a>
+          <a href="#" class="social-icon">X: @FBISD_STEM</a>
+        </div>
       </div>
     </div>
-  </div>
-</section>
 
-<section id="principles" style="border-top:1px solid var(--line);">
-  <div class="wrap">
-    <div class="eyebrow">Our principles</div>
-    <h2 class="h2">What guides this campaign</h2>
-    <p class="sub">Every ask we make to the Board and the city is built on the same four commitments.</p>
-    <div class="cols4">
-      <div class="pcard"><h3>Equity first</h3><p>Every FBISD student deserves real tool access, regardless of which campus they attend or how well-funded its booster club is.</p></div>
-      <div class="pcard"><h3>Real engineering access</h3><p>Machining equipment and practice space that matches what students will actually use in engineering careers.</p></div>
-      <div class="pcard"><h3>Fiscally responsible</h3><p>Open to repurposing an underused elementary campus instead of requiring new construction from scratch.</p></div>
-      <div class="pcard"><h3>Sustained advocacy</h3><p>A multi-year plan through the FBISD 2027 bond cycle, not a single event.</p></div>
-    </div>
-  </div>
-</section>
-
-<section id="action" style="border-top:1px solid var(--line);">
-  <div class="wrap">
-    <div class="eyebrow">Get involved</div>
-    <h2 class="h2">Three ways to get involved</h2>
-    <p class="sub">Every signature, public comment, and endorsement moves this closer to a Board vote.</p>
-    <div class="cols3">
-      <div class="action-card">
-        <span class="tag">Step 1</span>
-        <h3>Sign and share the petition</h3>
-        <p>Add your name, then share it directly with a few FBISD parents, teachers, or neighbors.</p>
-        <a href="#petition" class="btn btn-accent" style="font-size:12px;padding:10px 16px;">Sign the petition</a>
-      </div>
-      <div class="action-card">
-        <span class="tag">Step 2</span>
-        <h3>Speak at the Board meeting</h3>
-        <p>Take three minutes at the podium during public comment. Regular-meeting sign-up closes at 12:00 p.m. the day of the meeting.</p>
-        <a href="#dates" class="btn btn-accent" style="font-size:12px;padding:10px 16px;">See key dates</a>
-      </div>
-      <div class="action-card">
-        <span class="tag">Step 3</span>
-        <h3>Endorse as an engineer or business leader</h3>
-        <p>Submit a signed letter of support for the Board proposal packet.</p>
-        <a href="#" class="btn btn-accent" style="font-size:12px;padding:10px 16px;">Submit endorsement</a>
+    <!-- LEGAL ADVOCACY DISCLAIMER -->
+    <div class="footer-legal">
+      <div class="container">
+        <p>⚠️ <strong>LEGAL ADVOCACY DISCLAIMER:</strong> This website is an independent, non-partisan, student-led advocacy campaign spearheaded by PowerBreakers FIRST Tech Challenge Team #22045 (<a href="https://www.powerbreakers22045.com" target="_blank" style="color: #94a3b8;">www.powerbreakers22045.com</a>) on behalf of Fort Bend County students and parents. This campaign is not officially affiliated with, funded by, or operated by Fort Bend Independent School District (FBISD). All renderings, school names, and logos are used strictly under nominative fair use for public commentary and educational advocacy.</p>
       </div>
     </div>
-  </div>
-</section>
+  </footer>
 
-<section id="petition" style="border-top:1px solid var(--line);">
-  <div class="wrap" style="max-width:640px;">
-    <div class="eyebrow">Add your name</div>
-    <h2 class="h2">Sign the petition</h2>
-    <p class="sub">Official target: FBISD Board of Trustees and Superintendent. Signatures are compiled into a real, auditable list delivered to the Board Secretary — no names are displayed publicly on this page.</p>
-    <div class="card">
-      <label style="display:block;font-size:13px;font-weight:600;margin-bottom:6px;">I am a...</label>
-      <select style="width:100%;padding:11px;border:1px solid var(--line-strong);border-radius:6px;font-size:14px;margin-bottom:16px;background:var(--bg);color:var(--text);">
-        <option>FBISD parent</option>
-        <option>FBISD student</option>
-        <option>FBISD educator or coach</option>
-        <option>Fort Bend community member</option>
-        <option>Local engineer or business leader</option>
-      </select>
-      <label style="display:block;font-size:13px;font-weight:600;margin-bottom:6px;">Full name</label>
-      <input type="text" placeholder="Jordan Ramirez" style="width:100%;padding:11px;border:1px solid var(--line-strong);border-radius:6px;font-size:14px;margin-bottom:16px;background:var(--bg);color:var(--text);">
-      <label style="display:block;font-size:13px;font-weight:600;margin-bottom:6px;">Email</label>
-      <input type="email" placeholder="name@email.com" style="width:100%;padding:11px;border:1px solid var(--line-strong);border-radius:6px;font-size:14px;margin-bottom:18px;background:var(--bg);color:var(--text);">
-      <a href="#" class="btn btn-accent" style="width:100%;text-align:center;display:block;">Sign the petition</a>
+  <!-- MODAL FOR SMS ALERTS -->
+  <div class="modal-overlay" id="sms-modal">
+    <div class="modal-card">
+      <button class="modal-close" id="close-sms-modal">✕</button>
+      <h3>Join the Student Coalition</h3>
+      <p>Get high-priority SMS reminders 2 hours before Board Meeting registration closes so your voice is heard!</p>
+      <form id="modal-sms-form" class="patronus-form">
+        <div class="form-group">
+          <input type="text" placeholder="Your Name *" required>
+        </div>
+        <div class="form-group">
+          <input type="tel" placeholder="Cell Phone Number *" required>
+        </div>
+        <div class="form-group">
+          <input type="text" placeholder="FBISD School / Neighborhood" required>
+        </div>
+        <button type="submit" class="btn-patronus-submit">[ Join Coalition & Get Alerts ]</button>
+      </form>
     </div>
   </div>
-</section>
 
-<section id="dates" style="border-top:1px solid var(--line);">
-  <div class="wrap">
-    <div class="eyebrow">Campaign key dates</div>
-    <h2 class="h2">Roadmap to the FBISD bond</h2>
-    <p class="sub">A clear, multi-phase plan from student vision to Board approval.</p>
-    <div class="datesgrid">
-      <div class="datecard"><span class="status">Active now</span><div class="q">2nd&ndash;3rd Qtr 2026</div><p>Grassroots mobilization and petition drive across all 11 FBISD high schools.</p></div>
-      <div class="datecard"><span class="status">Upcoming</span><div class="q">3rd Qtr 2026</div><p>Formal proposal presented to FBISD CTE leadership and facilities staff.</p></div>
-      <div class="datecard"><span class="status">Upcoming</span><div class="q">4th Qtr 2026</div><p>Board meeting mobilization and delivery of the real, auditable signature list.</p></div>
-      <div class="datecard"><span class="status">Target goal</span><div class="q">FY 2027</div><p>Formal inclusion in the FBISD Facilities Master Plan and bond vote.</p></div>
-    </div>
-    <div class="prepgrid">
-      <div class="prep"><h3>How to speak at the Board</h3><p>Register online before the noon sign-up deadline on meeting day, then arrive by 6:00 p.m. at the FBISD Administration Building.</p></div>
-      <div class="prep"><h3>What to bring</h3><p>Your three-minute talking points and a one-page fact sheet — download the template before you go.</p></div>
-    </div>
-    <div class="hero-ctas">
-      <a href="#" class="btn btn-accent">Register to speak</a>
-      <a href="#" class="btn btn-outline">Download talking points</a>
-    </div>
-  </div>
-</section>
-
-<section id="gallery" style="border-top:1px solid var(--line);">
-  <div class="wrap">
-    <div class="eyebrow">On the campaign trail</div>
-    <h2 class="h2">Students, parents, and educators in action</h2>
-    <p class="sub">Real moments from the campaign — no names published without consent.</p>
-    <div class="gallery">
-      <figure><div class="ph">Photo</div><figcaption>Petition tabling, Aug 2026</figcaption></figure>
-      <figure><div class="ph">Photo</div><figcaption>Build session, Jul 2026</figcaption></figure>
-      <figure><div class="ph">Photo</div><figcaption>Coalition meeting, Aug 2026</figcaption></figure>
-      <figure><div class="ph">Photo</div><figcaption>Campus flyering, Aug 2026</figcaption></figure>
-    </div>
-  </div>
-</section>
-
-<section style="border-top:1px solid var(--line);">
-  <div class="wrap">
-    <div class="cta-block">
-      <h2>Stand with <span>Sparks</span></h2>
-      <p>Help bring a robotics home to Fort Bend ISD. Volunteer, invite a friend, or add your name to the petition.</p>
-      <div class="hero-ctas">
-        <a href="#petition" class="btn btn-accent">Join the campaign</a>
-        <a href="#why" class="btn btn-outline">Learn more</a>
-      </div>
-    </div>
-  </div>
-</section>
-
-<footer>
-  <div class="wrap">
-    <div class="flex">
-      <div style="max-width:420px;">
-        <div class="brand" style="margin-bottom:10px;">SPARKS <span>CENTER</span></div>
-        <p>A student civic advocacy campaign for equitable STEM infrastructure across all Fort Bend ISD high schools.</p>
-      </div>
-      <div>
-        <b>Navigation</b>
-        <p><a href="#facility">Facility</a><br><a href="#why">Why it matters</a><br><a href="#action">Take action</a><br><a href="#dates">Key dates</a></p>
-      </div>
-      <div>
-        <b>About the organizers</b>
-        <p>Organized by Power Breakers, FIRST Tech Challenge Team 22045, Sugar Land, Texas.</p>
-      </div>
-    </div>
-    <div class="disclaimer">
-      This website is an independent, non-partisan, student-led advocacy campaign on behalf of Fort Bend County students and parents. It is not officially affiliated with, funded by, or operated by Fort Bend Independent School District (FBISD). All renderings, school names, and logos are used strictly under nominative fair use for public commentary and educational advocacy. Renderings are student concepts, not official district designs.
-    </div>
-  </div>
-</footer>
-
-<script src="script.js"></script>
+  <script src="script.js"></script>
 </body>
 </html>
